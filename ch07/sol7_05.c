@@ -1,3 +1,5 @@
+/* Computes the scrabble value of a word */
+
 #include <ctype.h>
 #include <stdio.h>
 
