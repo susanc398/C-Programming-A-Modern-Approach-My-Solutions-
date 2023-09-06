@@ -1,3 +1,5 @@
+/* Translates message to BIFF-speak */
+
 #include <stdio.h>
 
 #define SIZE 100
