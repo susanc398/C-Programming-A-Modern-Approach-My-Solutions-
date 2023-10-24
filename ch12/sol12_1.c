@@ -6,17 +6,16 @@
 
 int main(void)
 {
-    int ch, wordArray[MAX_SIZE], i = 0, *p;
+    int ch, message[MAX_SIZE], len = 0, *p;
 
     printf("Enter a message: ");
-
-    while ((ch = getchar()) != '\n' && i < MAX_SIZE) {
-        wordArray[i++] = ch;
+    while((ch = getchar()) != '\n') {
+        message[len++] = ch;
     }
 
-    for (p = wordArray + i - 1; p >= wordArray; p--)
-        putchar(*p);
+    for (p = &message[len - 1]; p >= &message[0]; p--)
+        printf("%c", *p);
     printf("\n");
-    
+
     return 0;
 }
